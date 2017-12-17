@@ -2,6 +2,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+/*
+
+	This is a NavBar that will change the display of active links based on current path.
+	nav-bar-left houses the website logo/title, as well as the main route links.
+	nav-bar-right houses social media icons like LinkedIn, Medium, and GitHub.
+
+*/
+
 const NavBar = () => {	
 	return(
 		<div id='nav-bar'>
@@ -11,7 +19,6 @@ const NavBar = () => {
 				</div>
 				<div className='nav-item'>
 					{window.location.pathname === '/portfolio'? <Link className='nav-link-bold' to='/portfolio'>Portfolio</Link> : <Link className='nav-link' to='/portfolio'>Portfolio</Link>}
-					// the line above changes the thickness of the text depending on what route is being rendered. Ensure '/route' matched Link
 				</div>
 				<div className='divider'></div>
 				<div className='divider'></div>
